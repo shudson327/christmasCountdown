@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="./christmas.js"></script>
+
+        <title>Christmas Countdown</title>
+    </head>
+<body>
+
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="video/snow.mov" class="fullscreen-bg__video">
+            <source src="video/snow.mov" type="video/webm">
+        </video>
+    </div>
+    
+        <div id="wrapper">
+            <div id="clock">
+                <header>
+                    <h1 id="head">Christmas Countdown!</h1>
+                    <!-- <h4 id="subhead">“The best way to spread Christmas cheer is singing loud for all to hear.” – Buddy</h4> -->
+                </header>
+                
+                <div id="count-container">
+                    <div id="counter">
+                        <span id="days">&nbsp;</span>
+                        <span id="hours">&nbsp;</span>
+                        <span id="minutes">&nbsp;</span>
+                        <span id="seconds">&nbsp;</span>
+                    </div>
+                    <div id="labels">
+                        <span>Days</span>
+                        <span>Hours</span>
+                        <span>Minutes</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <audio src="/video/christmas.mp3" loop autoplay id="music"></audio>
+            <button onclick="enableMute()" type="button" id="mute">Mute</button>
+            <h4 id="subhead">“The best way to spread Christmas cheer is singing loud for all to hear.” – Buddy</h4>
+        </div>
+<script>
+var audio = document.getElementById("music");
+
+function enableMute() { 
+  audio.muted = true;
+} 
+</script>
+
+</body>
+</html>
