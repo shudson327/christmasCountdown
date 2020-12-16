@@ -38,15 +38,15 @@
                     </div>
                 </div>
             </div>
-            <audio src="https://www.gmajormusictheory.org/Freebies/Level3/3JingleBells/3JingleBells.mp3" loop autoplay id="music"></audio>
+            <audio src="https://www.gmajormusictheory.org/Freebies/Level3/3JingleBells/3JingleBells.mp3" loop autoplay id="music" type="audio/mpeg"></audio>
             <button onclick="enableMute()" type="button" id="mute">Mute</button>
             <h4 id="subhead">“The best way to spread Christmas cheer is singing loud for all to hear.” – Buddy</h4>
         </div>
-<script>
-var audio = document.getElementById("music");
 
+<script>
+var playmusic = document.getElementById("mute")
 function enableMute() { 
-  audio.muted = true;
+  playmusic.muted = true;
 } 
 </script>
 
