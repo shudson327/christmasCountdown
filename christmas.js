@@ -16,6 +16,6 @@ let countDown = new Date('Dec 25, 2020 00:00:00').getTime(),
         document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
         });       
 
-    
+   
     
         

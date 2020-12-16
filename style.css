@@ -21,7 +21,7 @@ header {
     color: white;
     text-align: center;
     font-family: 'Cinzel Decorative', sans-serif;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
     font-size: 2em;
 }
 
@@ -121,6 +121,12 @@ h4 {
     text-align: center;
     font-family: 'Cinzel Decorative', sans-serif;
     font-size: 2em;
-    padding-top: 3rem;
+    padding-top: 0.5rem;
+    
 }
+
+#play-button {
+    margin-bottom: 1.5rem;
+}
+
 
